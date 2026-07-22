@@ -27,6 +27,7 @@ Recreate the Zach Alley Highland Bagpiper marketing site (originally on Lovable)
 | 2026-07-21 | Low-risk polish: hero Inquire CTA, section IDs, light scroll reveal, skip link, SEO/JSON-LD, dynamic footer year, Z favicon |
 | 2026-07-22 | Formspree form `xgoglkjo`; inquire uses `@formspree/react` `useForm` |
 | 2026-07-22 | Canonical domain `https://www.zachalleybagpiper.com`; foundational technical SEO (robots, sitemap, redirects, WebP, JSON-LD) |
+| 2026-07-22 | Google Search Console Domain property: DNS TXT verification on apex `zachalleybagpiper.com` |
 
 ---
 
@@ -58,6 +59,11 @@ Recreate the Zach Alley Highland Bagpiper marketing site (originally on Lovable)
 ---
 
 ## Changelog
+
+### 2026-07-22 — Google Search Console DNS
+
+- Added apex TXT `google-site-verification=…` on Vercel DNS for `zachalleybagpiper.com`
+- Next (manual): click Verify in GSC, then submit `https://www.zachalleybagpiper.com/sitemap.xml`
 
 ### 2026-07-22 — Teaching copy
 
