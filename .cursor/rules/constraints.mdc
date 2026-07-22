@@ -1,0 +1,12 @@
+---
+description: Hard scope and repo-boundary rules for all agents
+alwaysApply: true
+---
+
+# Constraints
+
+Follow [`docs/CONSTRAINTS.md`](docs/CONSTRAINTS.md) on every task.
+
+- Touch only what the user asked for; no drive-by changes.
+- Never act outside this repository unless the user explicitly directs a path **and** confirms after you restate it.
+- Keep secrets in `.env`; never expose the private inquire email in the UI.

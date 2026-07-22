@@ -1,0 +1,14 @@
+---
+description: Keep docs/BLUEPRINT.md current when planning or changing code
+alwaysApply: true
+---
+
+# Blueprint
+
+When a plan is discussed or code changes land in this session, update [`docs/BLUEPRINT.md`](docs/BLUEPRINT.md):
+
+- Add or adjust **Decisions** if something material was chosen
+- Append a dated **Changelog** entry summarizing what changed
+- Keep **Current intent** accurate if the project goal shifted
+
+Do not leave the blueprint stale after meaningful work.
