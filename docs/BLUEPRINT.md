@@ -63,6 +63,11 @@ Recreate the Zach Alley Highland Bagpiper marketing site (originally on Lovable)
 - Wired inquire form to form ID `xgoglkjo` via `useForm`
 - Added `.env` with `VITE_FORMSPREE_ID` (kept out of git)
 
+### 2026-07-22 — GitHub + Vercel
+
+- Initial commit on `main`
+- Pushed to GitHub and deployed on Vercel
+
 ### 2026-07-21 — Initial one-shot recreate
 
 - Scaffolded Vite React TS + Tailwind; seeded agent docs and Cursor rules
