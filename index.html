@@ -10,21 +10,26 @@
       content="Professional Highland bagpiper based in Denver and Boulder. Weddings, funerals, memorials, and ceremonies across Colorado and beyond."
     />
     <meta name="author" content="Zach Alley" />
+    <link rel="canonical" href="https://www.zachalleybagpiper.com/" />
     <meta property="og:title" content="Zach Alley — Highland Bagpiper | Denver &amp; Boulder" />
     <meta
       property="og:description"
       content="Professional Highland bagpiper based in Denver and Boulder. Weddings, funerals, memorials, and ceremonies across Colorado and beyond."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/images/flatirons.png" />
+    <meta property="og:url" content="https://www.zachalleybagpiper.com/" />
+    <meta property="og:site_name" content="Zach Alley — Highland Bagpiper" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://www.zachalleybagpiper.com/images/flatirons.webp" />
+    <meta property="og:image:alt" content="Zach Alley playing Highland bagpipes with the Flatirons in the background" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Zach Alley — Highland Bagpiper | Denver &amp; Boulder" />
     <meta
       name="twitter:description"
       content="Professional Highland bagpiper based in Denver and Boulder. Weddings, funerals, memorials, and ceremonies across Colorado and beyond."
     />
-    <meta name="twitter:image" content="/images/flatirons.png" />
-    <link rel="preload" as="image" href="/images/flatirons.png" />
+    <meta name="twitter:image" content="https://www.zachalleybagpiper.com/images/flatirons.webp" />
+    <link rel="preload" as="image" href="/images/flatirons.webp" type="image/webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,11 +39,45 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Zach Alley",
-        "jobTitle": "Highland Bagpiper",
-        "description": "Professional Highland bagpiper for weddings, funerals, memorials, and ceremonies.",
-        "areaServed": ["Denver", "Boulder", "Colorado"]
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://www.zachalleybagpiper.com/#person",
+            "name": "Zach Alley",
+            "url": "https://www.zachalleybagpiper.com/",
+            "jobTitle": "Highland Bagpiper",
+            "description": "Professionally trained musician and Highland bagpiper for weddings, funerals, memorials, and ceremonies. Based in the Denver–Boulder area, available across Colorado and beyond.",
+            "areaServed": [
+              { "@type": "City", "name": "Denver" },
+              { "@type": "City", "name": "Boulder" },
+              { "@type": "State", "name": "Colorado" }
+            ],
+            "knowsAbout": [
+              "Highland bagpipes",
+              "Wedding bagpipe performance",
+              "Funeral and memorial bagpipe performance",
+              "Special event bagpipe performance"
+            ]
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://www.zachalleybagpiper.com/#service",
+            "name": "Zach Alley — Highland Bagpiper",
+            "url": "https://www.zachalleybagpiper.com/",
+            "description": "Highland bagpipe performances for weddings, funerals, memorials, and special events. Serving Denver, Boulder, Colorado, and beyond.",
+            "provider": { "@id": "https://www.zachalleybagpiper.com/#person" },
+            "serviceType": [
+              "Wedding bagpipe performance",
+              "Funeral and memorial bagpipe performance",
+              "Special event bagpipe performance"
+            ],
+            "areaServed": [
+              { "@type": "City", "name": "Denver" },
+              { "@type": "City", "name": "Boulder" },
+              { "@type": "State", "name": "Colorado" }
+            ]
+          }
+        ]
       }
     </script>
   </head>

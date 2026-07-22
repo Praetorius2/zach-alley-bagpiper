@@ -11,7 +11,8 @@ Agents: update this file in the same session when plans are discussed or code ch
 Recreate the Zach Alley Highland Bagpiper marketing site (originally on Lovable) as a local Vite + React + TypeScript + Tailwind app, with Formspree inquire (no public email) and precise agent docs.
 
 **Path:** `C:\Users\Zach\Projects\zach-alley-bagpiper`  
-**Reference:** https://bagpipe-boom-denver.lovable.app/
+**Live:** https://www.zachalleybagpiper.com/  
+**Reference (original):** https://bagpipe-boom-denver.lovable.app/
 
 ---
 
@@ -25,6 +26,7 @@ Recreate the Zach Alley Highland Bagpiper marketing site (originally on Lovable)
 | 2026-07-21 | Project docs: `docs/BLUEPRINT.md` + `docs/CONSTRAINTS.md`, wired via always-on Cursor rules |
 | 2026-07-21 | Low-risk polish: hero Inquire CTA, section IDs, light scroll reveal, skip link, SEO/JSON-LD, dynamic footer year, Z favicon |
 | 2026-07-22 | Formspree form `xgoglkjo`; inquire uses `@formspree/react` `useForm` |
+| 2026-07-22 | Canonical domain `https://www.zachalleybagpiper.com`; foundational technical SEO (robots, sitemap, redirects, WebP, JSON-LD) |
 
 ---
 
@@ -57,6 +59,15 @@ Recreate the Zach Alley Highland Bagpiper marketing site (originally on Lovable)
 
 ## Changelog
 
+### 2026-07-22 — Foundational technical SEO
+
+- Canonical + absolute OG/Twitter for `https://www.zachalleybagpiper.com`
+- `vercel.json` permanent redirects from apex and production `*.vercel.app` host to www
+- Added `public/robots.txt` and `public/sitemap.xml`
+- JSON-LD `@graph` with Person + ProfessionalService (no address/email)
+- Section eyebrows promoted to `h2` for valid heading hierarchy
+- Hero/mid images: WebP + PNG fallback, dimensions, preload WebP
+
 ### 2026-07-22 — Formspree React integration
 
 - Installed `@formspree/react`
@@ -66,7 +77,8 @@ Recreate the Zach Alley Highland Bagpiper marketing site (originally on Lovable)
 ### 2026-07-22 — GitHub + Vercel
 
 - Initial commit on `main`
-- Pushed to GitHub and deployed on Vercel
+- GitHub: https://github.com/Praetorius2/zach-alley-bagpiper
+- Vercel production: https://zach-alley-bagpiper.vercel.app (GitHub repo connected for future deploys)
 
 ### 2026-07-21 — Initial one-shot recreate
 

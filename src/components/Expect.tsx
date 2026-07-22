@@ -31,12 +31,12 @@ export function Expect() {
       aria-labelledby="expect-heading"
     >
       <div className="mx-auto max-w-5xl">
-        <p
+        <h2
           id="expect-heading"
           className="text-xs font-medium tracking-[0.22em] text-ink-muted uppercase"
         >
           What to expect when you book
-        </p>
+        </h2>
 
         <ol className="mt-12 space-y-12 md:space-y-14">
           {expectations.map((item) => (

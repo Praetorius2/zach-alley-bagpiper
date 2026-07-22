@@ -5,12 +5,17 @@ export function Hero() {
       className="relative h-[100svh] min-h-[640px] w-full overflow-hidden"
       aria-label="Introduction"
     >
-      <img
-        src="/images/flatirons.png"
-        alt="Zach Alley playing Highland bagpipes with the Flatirons in the background"
-        className="absolute inset-0 h-full w-full object-cover object-[center_top]"
-        fetchPriority="high"
-      />
+      <picture>
+        <source srcSet="/images/flatirons.webp" type="image/webp" />
+        <img
+          src="/images/flatirons.png"
+          alt="Zach Alley playing Highland bagpipes with the Flatirons in the background"
+          width={1122}
+          height={1402}
+          className="absolute inset-0 h-full w-full object-cover object-[center_top]"
+          fetchPriority="high"
+        />
+      </picture>
       <div
         className="absolute inset-0 bg-gradient-to-t from-night via-night/55 to-night/20"
         aria-hidden="true"

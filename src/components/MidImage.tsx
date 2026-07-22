@@ -1,12 +1,17 @@
 export function MidImage() {
   return (
     <section className="relative h-[80svh] min-h-[520px] w-full overflow-hidden" aria-label="Featured performance">
-      <img
-        src="/images/cathedral.png"
-        alt="Zach Alley playing bagpipes inside a gothic cathedral"
-        className="absolute inset-0 h-full w-full object-cover object-center"
-        loading="lazy"
-      />
+      <picture>
+        <source srcSet="/images/cathedral.webp" type="image/webp" />
+        <img
+          src="/images/cathedral.png"
+          alt="Zach Alley playing bagpipes inside a gothic cathedral"
+          width={1122}
+          height={1402}
+          className="absolute inset-0 h-full w-full object-cover object-center"
+          loading="lazy"
+        />
+      </picture>
       <div
         className="absolute inset-0 bg-gradient-to-t from-night via-night/40 to-transparent"
         aria-hidden="true"

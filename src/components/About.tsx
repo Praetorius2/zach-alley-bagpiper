@@ -11,12 +11,12 @@ export function About() {
       aria-labelledby="about-heading"
     >
       <div className={`mx-auto max-w-3xl ${isVisible ? 'reveal is-visible' : 'reveal'}`}>
-        <p
+        <h2
           id="about-heading"
           className="text-xs font-medium tracking-[0.22em] text-ink-muted uppercase"
         >
           About Zach
-        </p>
+        </h2>
         <div className="mt-8 space-y-6 font-display text-xl leading-relaxed text-ink md:text-2xl md:leading-relaxed">
           <p>
             Zach Alley is a professionally trained musician with undergraduate and graduate degrees

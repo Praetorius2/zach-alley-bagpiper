@@ -24,12 +24,12 @@ export function Services() {
       aria-labelledby="services-heading"
     >
       <div className="mx-auto max-w-5xl">
-        <p
+        <h2
           id="services-heading"
           className="text-xs font-medium tracking-[0.22em] text-ink-muted uppercase"
         >
           What I play for
-        </p>
+        </h2>
 
         <ul className="mt-10 divide-y divide-ink/10 border-y border-ink/10">
           {services.map((service) => (
