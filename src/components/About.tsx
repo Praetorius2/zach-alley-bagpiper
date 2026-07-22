@@ -33,6 +33,10 @@ export function About() {
             Zach also holds an MBA — an unusual but useful complement for anyone who values both
             artistry and a thoughtfully run event.
           </p>
+          <p>
+            From his private music studio, Zach offers in-person and virtual lessons in Highland
+            bagpipes, orchestral string instruments, and piano.
+          </p>
         </div>
       </div>
     </section>

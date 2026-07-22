@@ -14,6 +14,11 @@ const services = [
     description:
       'Retirement parties, corporate gatherings, golf tournaments, and cultural celebrations.',
   },
+  {
+    title: 'Lessons',
+    description:
+      'Private in-person or virtual lessons — bagpipes, orchestral strings, piano.',
+  },
 ]
 
 export function Services() {

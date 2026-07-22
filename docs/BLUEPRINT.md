@@ -59,6 +59,11 @@ Recreate the Zach Alley Highland Bagpiper marketing site (originally on Lovable)
 
 ## Changelog
 
+### 2026-07-22 — Teaching copy
+
+- Added studio lessons paragraph to About
+- Added Lessons row under services (in-person / virtual; bagpipes, strings, piano)
+
 ### 2026-07-22 — Foundational technical SEO
 
 - Canonical + absolute OG/Twitter for `https://www.zachalleybagpiper.com`
