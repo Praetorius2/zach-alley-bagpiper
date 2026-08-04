@@ -25,9 +25,9 @@ export function About() {
             intimate celebrations attended only by immediate family.
           </p>
           <p>
-            His musical life spans orchestral, solo, and chamber settings, with experience
-            performing and teaching bagpipes, cello, violin, piano, guitar, and bass. He also
-            records and live-streams from his home studio.
+            His musical experience includes orchestral, solo, and chamber settings in venues from
+            Carnegie Hall to local pubs. He performs and teaches bagpipes, cello, violin, piano,
+            guitar, and bass. He also records and live-streams from his home studio.
           </p>
           <p>
             Zach also holds an MBA — an unusual but useful complement for anyone who values both

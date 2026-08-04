@@ -83,24 +83,23 @@ export const SERVICES: ServiceDefinition[] = [
     fitHeading: 'How bagpipes may fit the service',
     fit: [
       'Bagpipes may accompany arrival or entrance, processional moments, closing music, or graveside placement. In some settings, playing at a short distance can create a measured, dignified presence.',
-      'Indoor and outdoor acoustics differ, and each service can be coordinated individually with a funeral director, officiant, or family representative so timing and placement feel appropriate — not prescribed by a fixed script.',
+      'Indoor and outdoor acoustics differ, and each service can be planned individually with you or the event coordinator so timing and placement feel appropriate. I have performed on stages with orchestras and from the roof of a house during a graduation party. We will discuss what is most appropriate for your event.',
     ],
     backgroundHeading: 'A measured musical presence',
     background: [
-      'Zach is a professionally trained musician with undergraduate and graduate degrees in music. His experience includes performances ranging from a large university 9/11 parade and memorial to intimate memorial celebrations attended only by immediate family.',
-      'That range matters for funeral and memorial work: the same instrument can serve a public remembrance or a quiet family gathering, with preparation matched to the setting.',
+      'Zach’s experience includes performances ranging from a large university 9/11 parade and memorial to intimate memorial celebrations attended only by immediate family.',
+      'That range matters for funeral and memorial work: the same instrument can serve a public remembrance or a quiet family gathering, with preparation matched to the setting. For the fuller musical background, see About on the homepage.',
     ],
     expectHeading: 'What families and directors can expect',
     expect: [
-      'Clear communication about date, location, and the role you have in mind for the bagpipes.',
-      'Coordination with the funeral director, officiant, or family representative on timing and placement.',
-      'Professional preparation and an appropriate musical presentation for the service.',
-      'Adaptability to large public memorials or intimate immediate-family gatherings.',
+      'Clear communication about date, location, and the role you have in mind for the bagpipes — or a conversation to find that role together.',
+      'Coordination with the funeral director, officiant, family representative, or event coordinator on timing and placement.',
+      'A respectful, prepared musical presence suited to large public memorials or intimate immediate-family gatherings.',
     ],
     areaHeading: 'Service area',
     area: [
       'Zach serves the Denver metro area, Boulder County, and nearby Front Range communities, including Thornton, Northglenn, Westminster, Broomfield, Arvada, Golden, Louisville, Lafayette, Erie, and Longmont.',
-      'Select mountain and destination events are considered when scheduling and travel allow. There is no storefront in each city — travel is arranged for the event location.',
+      'Mountain and other destination events are considered when scheduling and travel allow. Please send an inquiry if you are unsure about your location.',
     ],
     faqs: [
       {
@@ -114,9 +113,9 @@ export const SERVICES: ServiceDefinition[] = [
           'Both are possible. Indoor volume and outdoor weather or acoustics are discussed during planning so the presentation fits the venue.',
       },
       {
-        question: 'Can you coordinate with our funeral director?',
+        question: 'Can you coordinate with our event coordinator?',
         answer:
-          'Yes. Zach works with funeral directors, officiants, and family representatives on timing, entrance or exit cues, and where to stand or process.',
+          'Yes. Zach works with funeral directors, officiants, family representatives, etc., on programming, timing, entrance or exit cues, and where to stand or process.',
       },
       {
         question: 'What if the gathering is very small?',
@@ -131,7 +130,12 @@ export const SERVICES: ServiceDefinition[] = [
       {
         question: 'How should we begin an inquiry?',
         answer:
-          'Share the date, location, type of service, and the role you envision for the bagpipes. That information is enough to start a thoughtful conversation.',
+          'Feel free to reach out with or without details. Sometimes clarity comes through conversation. If you have it, share the date, location, type of service, and the role you envision for the bagpipes.',
+      },
+      {
+        question: 'Will you tell me if bagpipes are not the right fit?',
+        answer:
+          'Yes. Bagpipes can be a meaningful part of many services, but not every gathering. If another direction would serve the moment better, I will say so plainly.',
       },
     ],
     ctaHeading: 'Inquire about a funeral or memorial',
@@ -169,20 +173,19 @@ export const SERVICES: ServiceDefinition[] = [
     ],
     backgroundHeading: 'Prepared for ceremony settings',
     background: [
-      'Zach holds undergraduate and graduate degrees in music and performs in solo, chamber, and ceremonial settings. That background supports reliable timing, clear cues, and a composed presence on a day with many moving parts.',
-      'Whether the ceremony is on the Front Range or at a mountain destination, the focus is professional preparation and music that fits the couple’s vision for the role of the bagpipes.',
+      'Zach performs in solo, chamber, and ceremonial settings — experience that supports reliable timing, clear cues, and a composed presence on a day with many moving parts.',
+      'Whether the ceremony is on the Front Range or at a mountain destination, the focus is music that fits the couple’s vision for the role of the bagpipes.',
     ],
     expectHeading: 'What couples and planners can expect',
     expect: [
-      'Straightforward communication about date, venue, and the moments where bagpipes should appear.',
+      'Straightforward conversation about date, venue, and the moments where bagpipes should appear — including brainstorming when the plan is still open.',
       'Coordination with your planner, officiant, or other musicians on cues and timing.',
-      'Professional preparation and an appropriate presentation for ceremony and reception settings.',
       'Flexibility for outdoor venues, mountain locations, and both intimate and larger guest lists.',
     ],
     areaHeading: 'Service area',
     area: [
       'Zach is available for Front Range weddings and select Rocky Mountain destination weddings, including communities such as Denver, Boulder, Golden, and mountain destinations such as Vail, Keystone, and Aspen when scheduling and travel allow.',
-      'Travel is arranged for the venue; there is no separate office in each location.',
+      'Travel is arranged for the venue. If you are unsure whether your location works, send an inquiry.',
     ],
     faqs: [
       {
@@ -208,7 +211,12 @@ export const SERVICES: ServiceDefinition[] = [
       {
         question: 'How do we choose wedding music?',
         answer:
-          'Selections can be discussed during planning. Share any traditions or preferences, and options can be considered in context of the ceremony.',
+          'Selections can be discussed during planning and/or I can make a tasteful selection for you. Share any traditions or preferences, and options can be considered in context of the ceremony.',
+      },
+      {
+        question: 'Will you tell me if hiring a bagpiper is a bad idea for our wedding?',
+        answer:
+          'Absolutely. Bagpipes can make a memorable moment, but they are also famously loud, and bagpipers have a quirky reputation for a reason. If they would overpower the ceremony or feel out of place, I will be the first to say so.',
       },
     ],
     ctaHeading: 'Inquire about a wedding',
@@ -229,31 +237,31 @@ export const SERVICES: ServiceDefinition[] = [
     eventType: 'Ceremonial event',
     title: 'Ceremonial Bagpiper for Colorado Events | Zach Alley',
     description:
-      'Ceremonial bagpiper for Colorado universities, civic events, remembrance ceremonies, dedications, parades, and formal community occasions.',
+      'Ceremonial bagpiper for Colorado universities, civic events, remembrance ceremonies, dedications, and formal community occasions.',
     ogImage: 'cathedral',
     h1: 'Ceremonial bagpiper',
     intro:
-      'Highland bagpipes for university events, civic ceremonies, remembrance gatherings, dedications, parades, and formal institutional or community occasions.',
+      'Highland bagpipes for university events, civic ceremonies, remembrance gatherings, dedications, and formal institutional or community occasions.',
     overviewHeading: 'Bagpipes for formal occasions',
     overview: [
-      'Zach provides Highland bagpipe performance for university events, memorial ceremonies, civic ceremonies, remembrance events, dedications, parades, formal entrances, and other institutional or community occasions.',
-      'Organizers can define a clear ceremonial role — a formal entrance, a moment of remembrance, a parade placement, or another cue that fits the program.',
+      'Zach provides Highland bagpipe performance for university events, memorial ceremonies, civic ceremonies, remembrance events, dedications, formal entrances, and other institutional or community occasions.',
+      'Organizers can define a clear ceremonial role — a formal entrance, a moment of remembrance, or another cue that fits the program.',
     ],
     fitHeading: 'How bagpipes may fit the ceremony',
     fit: [
-      'Bagpipes often mark formal entrances, processional cues, moments of silence or remembrance, dedications, or parade positions. The exact placement depends on the program and the host institution or organizer.',
+      'Bagpipes often mark formal entrances, processional cues, moments of silence or remembrance, or dedications. The exact placement depends on the program and the host institution or organizer.',
       'Each event can be coordinated individually with event staff so timing, staging, and protocol are respected without treating any single format as a rigid rule.',
     ],
     backgroundHeading: 'Experience with public remembrance',
     background: [
-      'Zach’s background includes a large university 9/11 parade and memorial, as well as other ceremonial and public settings. He is a professionally trained musician with undergraduate and graduate degrees in music.',
-      'That combination supports reliable preparation for formal programs where timing, dignity, and clear communication with organizers matter.',
+      'Zach’s background includes a large university 9/11 parade and memorial, as well as other ceremonial and public settings.',
+      'That experience supports reliable preparation for formal programs where timing, dignity, and clear communication with organizers matter.',
     ],
     expectHeading: 'What organizers can expect',
     expect: [
       'Clear communication with event staff about schedule, cues, and staging.',
       'Professional preparation appropriate to institutional and community settings.',
-      'An adaptable presence for parades, indoor ceremonies, and outdoor remembrances.',
+      'A composed presence for indoor ceremonies and outdoor remembrances.',
       'Respect for the tone of the occasion — formal without unnecessary flourish.',
     ],
     areaHeading: 'Service area',
@@ -265,7 +273,7 @@ export const SERVICES: ServiceDefinition[] = [
       {
         question: 'What kinds of ceremonies do you play for?',
         answer:
-          'University events, civic ceremonies, remembrance gatherings, dedications, parades, formal entrances, and similar institutional or community occasions.',
+          'University events, civic ceremonies, remembrance gatherings, dedications, formal entrances, and similar institutional or community occasions.',
       },
       {
         question: 'Can you follow a detailed event run-of-show?',
@@ -273,9 +281,9 @@ export const SERVICES: ServiceDefinition[] = [
           'Yes. Share the schedule and cues in advance so placement and timing align with the rest of the program.',
       },
       {
-        question: 'Do you play in parades?',
+        question: 'Have you performed in large public ceremonies?',
         answer:
-          'Parade placements can be arranged when the role for the bagpipes is clear and logistics are shared in planning.',
+          'Yes. Zach’s experience includes a large university 9/11 parade and memorial. That background informs ceremonial work; current inquiries focus on university, civic, remembrance, and formal community occasions.',
       },
       {
         question: 'Is this a military bagpipe service?',
@@ -286,6 +294,11 @@ export const SERVICES: ServiceDefinition[] = [
         question: 'How is music selected for a ceremony?',
         answer:
           'Selections can be discussed during planning in light of the occasion, any traditions involved, and the time available in the program.',
+      },
+      {
+        question: 'Will you tell me if bagpipes are not appropriate for our ceremony?',
+        answer:
+          'Yes. I would rather help you choose the right musical presence than force a fit. If bagpipes are not the best match for the tone or program, I will tell you.',
       },
     ],
     ctaHeading: 'Inquire about a ceremonial event',
@@ -323,14 +336,13 @@ export const SERVICES: ServiceDefinition[] = [
     ],
     backgroundHeading: 'Professional presence for hosts and planners',
     background: [
-      'Zach is a professionally trained musician with undergraduate and graduate degrees in music and an MBA — useful when events need both artistry and clear logistics.',
-      'Experience across ceremonial, private, and public settings supports reliable timing and a composed presentation for hosts, planners, and corporate teams.',
+      'Zach brings both musical preparation and an MBA — useful when events need artistry and clear logistics.',
+      'Experience across ceremonial, private, and public settings supports reliable timing for hosts, planners, and corporate teams.',
     ],
     expectHeading: 'What hosts can expect',
     expect: [
-      'Clear communication about goals, timing, and where the bagpipes should appear.',
+      'Clear conversation about goals, timing, and where the bagpipes should appear — including short appearances or longer features.',
       'Coordination with planners, venue staff, or a designated on-site contact.',
-      'Professional preparation and an appropriate musical presentation for the room or outdoor space.',
       'Adaptability from intimate family occasions to larger corporate or community gatherings.',
     ],
     areaHeading: 'Service area',
@@ -363,6 +375,11 @@ export const SERVICES: ServiceDefinition[] = [
         question: 'How do we decide what music to use?',
         answer:
           'Selections can be discussed during planning based on the tone of the event and the time available.',
+      },
+      {
+        question: 'Will you tell me if a bagpiper is a bad idea for my event?',
+        answer:
+          'Absolutely. Bagpipes can be striking, but they are loud, and the instrument has a comic reputation as well as a ceremonial one. If they would distract from the occasion, I will say so and help you rethink.',
       },
     ],
     ctaHeading: 'Inquire about a private or corporate event',
@@ -400,14 +417,13 @@ export const SERVICES: ServiceDefinition[] = [
     ],
     backgroundHeading: 'Tradition with contemporary care',
     background: [
-      'Zach is a professionally trained Highland bagpiper with undergraduate and graduate degrees in music and experience in ceremonial, private, and public performance settings.',
-      'That training supports culturally respectful presentation and clear collaboration with organizers of heritage and holiday events.',
+      'Zach approaches Scottish and Irish occasions with respect for distinct traditions rather than treating them as interchangeable.',
+      'That care supports clear collaboration with organizers of heritage and holiday events. Full musical background is on the homepage About section.',
     ],
     expectHeading: 'What organizers can expect',
     expect: [
       'Communication that respects the specific tradition or holiday involved.',
       'Coordination on timing, staging, and the intended role for the bagpipes.',
-      'Professional preparation for dinners, festivals, parades, and community gatherings.',
       'A clear, composed musical presence without relying on stereotypes or spectacle for its own sake.',
     ],
     areaHeading: 'Service area',
@@ -429,7 +445,7 @@ export const SERVICES: ServiceDefinition[] = [
       {
         question: 'What about St. Patrick’s Day or parade appearances?',
         answer:
-          'Parade and holiday appearances are possible when logistics and the role for the bagpipes are clear in advance.',
+          'Holiday and festival appearances are possible when logistics and the role for the bagpipes are clear in advance.',
       },
       {
         question: 'Do you play Highland games or clan gatherings?',
@@ -440,6 +456,11 @@ export const SERVICES: ServiceDefinition[] = [
         question: 'How is repertoire chosen for cultural events?',
         answer:
           'Selections can be discussed during planning with attention to the occasion and any traditions the organizers want to honor.',
+      },
+      {
+        question: 'Will you tell me if bagpipes are not the right fit for our celebration?',
+        answer:
+          'Yes. Fit depends on the tradition, the program, and the room. If bagpipes would feel forced or out of place, I will say so directly.',
       },
     ],
     ctaHeading: 'Inquire about a cultural or holiday event',
@@ -477,19 +498,18 @@ export const SERVICES: ServiceDefinition[] = [
     ],
     backgroundHeading: 'Musician first',
     background: [
-      'Zach holds undergraduate and graduate degrees in music and has performed bagpipes with orchestras. His broader experience on cello, violin, piano, guitar, and bass supports ensemble awareness and collaborative preparation.',
-      'He also records and live-streams from his home studio, which can help when a project needs remote bagpipe tracks or a livestream appearance.',
+      'Zach has performed bagpipes with orchestras. Broader experience on cello, violin, piano, guitar, and bass supports ensemble awareness and collaborative preparation.',
+      'He also records and live-streams from his home studio when a project needs remote bagpipe tracks or a livestream appearance.',
     ],
     expectHeading: 'What collaborators can expect',
     expect: [
       'Clear communication about repertoire needs, rehearsal plans, and technical requirements at a high level.',
-      'Professional preparation suited to ensemble, concert, or studio contexts.',
       'Respect for conductors, producers, and fellow musicians’ processes.',
-      'Flexibility for Colorado projects and select destination collaborations when scheduling allows.',
+      'Flexibility for Colorado projects, select destination collaborations, and remote sessions when scheduling allows.',
     ],
     areaHeading: 'Service area',
     area: [
-      'Zach collaborates on projects in Colorado and on select destination engagements when travel and scheduling allow. Local keyword emphasis is secondary to musical fit and preparation.',
+      'Zach collaborates on projects in Colorado and on select destination engagements when travel and scheduling allow.',
       'Remote recording from the home studio is available for projects that do not require an on-site appearance.',
     ],
     faqs: [
@@ -517,6 +537,11 @@ export const SERVICES: ServiceDefinition[] = [
         question: 'Can repertoire be confirmed in advance?',
         answer:
           'Musical selections and preparation details can be discussed during planning so expectations are aligned before rehearsal or recording.',
+      },
+      {
+        question: 'Will you tell me if bagpipes are not a good musical fit?',
+        answer:
+          'Yes. Collaboration works best when the part serves the score and the ensemble. If bagpipes are not the right color for the project, I will say so early.',
       },
     ],
     ctaHeading: 'Inquire about a concert or recording project',

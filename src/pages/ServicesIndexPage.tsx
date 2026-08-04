@@ -61,7 +61,8 @@ export function ServicesIndexPage() {
           <Link to="/#inquire" className="underline decoration-ink/35 underline-offset-4 hover:decoration-ink">
             Send an inquiry
           </Link>{' '}
-          with your date, location, and event type.
+          including your date, location, and event type, or to brainstorm possibilities without
+          specifics or pressure to commit.
         </p>
       </section>
 

@@ -32,6 +32,9 @@ Professional Highland bagpiper marketing site for Zach Alley — multi-page, sea
 | 2026-08-03 | Per-page meta via React 19 native document metadata + prerender head injection (not react-helmet-async) |
 | 2026-08-03 | Six service routes + `/services` index; no city-page farm; lessons kept in About only (future studio site separate) |
 | 2026-08-03 | Optional GA4 via `VITE_GA_MEASUREMENT_ID` (no hardcoded ID); Formspree `event_type` + `source_page` context from service pages |
+| 2026-08-04 | Verified claims added by Zach: Carnegie Hall (among venues), graduation-party rooftop performance |
+| 2026-08-04 | Ceremonial page: parades kept as past experience (university 9/11), not advertised as a primary bookable service |
+| 2026-08-04 | Service pages use distinct “honest fit” FAQs; overlapping bio details centered on homepage About |
 
 ---
 
@@ -81,6 +84,13 @@ Each service page: hero, overview, fit, background, expect, area, FAQ, related s
 ---
 
 ## Changelog
+
+### 2026-08-04 — Copy edits and redundancy pass
+
+- Updated About bio (Carnegie Hall to local pubs); Services index helper invites low-pressure brainstorming
+- Funeral and wedding FAQ/copy updates (coordinator language, inquiry without details, wedding music selection)
+- Ceremonial page: removed parades from offerings; kept university 9/11 parade/memorial as experience
+- Added service-specific honest-fit FAQs on all six service pages; thinned repeated background/expect blocks
 
 ### 2026-08-03 — Professional services site expansion
 
