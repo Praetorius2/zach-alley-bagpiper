@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom'
+import { trackInquiryCtaClick } from '../lib/analytics'
+
 export function Hero() {
   return (
     <section
@@ -29,15 +32,24 @@ export function Hero() {
             <span className="mt-1 block italic">for the moments that matter.</span>
           </h1>
           <p className="mt-6 max-w-xl text-sm leading-relaxed font-light text-ink/90 md:text-base">
-            Weddings, funerals, and ceremonies. Based in the Denver–Boulder area, available across
-            Colorado and beyond.
+            Funerals, weddings, and ceremonies across Denver, Boulder, and Colorado’s Front Range —
+            with select mountain destinations when scheduling allows.
           </p>
-          <a
-            href="#inquire"
-            className="mt-8 inline-flex text-sm font-medium tracking-[0.16em] text-ink uppercase underline decoration-ink/35 underline-offset-8 transition hover:decoration-ink"
-          >
-            Inquire
-          </a>
+          <div className="mt-8 flex flex-wrap items-center gap-6">
+            <a
+              href="#inquire"
+              onClick={() => trackInquiryCtaClick('home_hero')}
+              className="inline-flex text-sm font-medium tracking-[0.16em] text-ink uppercase underline decoration-ink/35 underline-offset-8 transition hover:decoration-ink"
+            >
+              Inquire
+            </a>
+            <Link
+              to="/services"
+              className="inline-flex text-sm font-medium tracking-[0.16em] text-ink/85 uppercase transition-opacity hover:opacity-80"
+            >
+              Services
+            </Link>
+          </div>
         </div>
       </div>
     </section>

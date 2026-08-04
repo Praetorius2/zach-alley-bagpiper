@@ -8,7 +8,7 @@ Agents: update this file in the same session when plans are discussed or code ch
 
 ## Current intent
 
-Recreate the Zach Alley Highland Bagpiper marketing site (originally on Lovable) as a local Vite + React + TypeScript + Tailwind app, with Formspree inquire (no public email) and precise agent docs.
+Professional Highland bagpiper marketing site for Zach Alley — multi-page, search-friendly services site (Vite + React + TypeScript + Tailwind), Formspree inquire (no public email), covering funerals, weddings, ceremonies, private/corporate events, cultural & holiday events, and orchestral/concert/recording work across Colorado’s Front Range and select mountain destinations.
 
 **Path:** `C:\Users\Zach\Projects\zach-alley-bagpiper`  
 **Live:** https://www.zachalleybagpiper.com/  
@@ -28,20 +28,36 @@ Recreate the Zach Alley Highland Bagpiper marketing site (originally on Lovable)
 | 2026-07-22 | Formspree form `xgoglkjo`; inquire uses `@formspree/react` `useForm` |
 | 2026-07-22 | Canonical domain `https://www.zachalleybagpiper.com`; foundational technical SEO (robots, sitemap, redirects, WebP, JSON-LD) |
 | 2026-07-22 | Google Search Console Domain property: DNS TXT verification on apex `zachalleybagpiper.com` |
+| 2026-08-03 | Multi-route services IA with `react-router-dom`; build-time prerender for crawlable HTML (no framework migration) |
+| 2026-08-03 | Per-page meta via React 19 native document metadata + prerender head injection (not react-helmet-async) |
+| 2026-08-03 | Six service routes + `/services` index; no city-page farm; lessons kept in About only (future studio site separate) |
+| 2026-08-03 | Optional GA4 via `VITE_GA_MEASUREMENT_ID` (no hardcoded ID); Formspree `event_type` + `source_page` context from service pages |
 
 ---
 
 ## Section map
 
-1. Sticky header — brand + Inquire → `#inquire`
+### Homepage (`/`)
+1. Sticky header — brand, Services menu, Inquire
 2. Hero — Flatirons full-bleed photo + headline
 3. Intro — tradition / specialty copy
-4. Services (`#services`) — Weddings, Funerals & Memorials, Special Events
+4. Services (`#services`) — six linked service cards
 5. Mid image — cathedral photo + pull quote
-6. About (`#about`)
+6. About (`#about`) — bio + teaching note
 7. Expect (`#expect`) — numbered booking expectations
 8. Inquire (`#inquire`) — Formspree form
-9. Footer — name, service area, © year
+9. Footer — name, service area, Services links, © year
+
+### Services
+- `/services` — index of all six services
+- `/funeral-memorial-bagpiper`
+- `/wedding-bagpiper`
+- `/ceremonial-bagpiper`
+- `/private-corporate-events`
+- `/scottish-irish-holiday-events`
+- `/orchestral-concert-recording`
+
+Each service page: hero, overview, fit, background, expect, area, FAQ, related services, inquire (prefilled event type).
 
 ## Design tokens
 
@@ -54,11 +70,29 @@ Recreate the Zach Alley Highland Bagpiper marketing site (originally on Lovable)
 1. Form endpoint: `https://formspree.io/f/xgoglkjo` (inbox configured in Formspree; not shown on site)
 2. Local `.env` sets `VITE_FORMSPREE_ID=xgoglkjo` (gitignored)
 3. Inquire section uses `@formspree/react` (`useForm` + `ValidationError`)
-4. Test submit from the inquire section; confirm delivery in Formspree / Gmail
+4. Hidden `source_page` + expanded `event_type` options for triage
+5. Test submit from the inquire section; confirm delivery in Formspree / Gmail
+
+## Analytics setup
+
+1. Optional: set `VITE_GA_MEASUREMENT_ID` (GA4, e.g. `G-XXXXXXXXXX`) in `.env` and Vercel env
+2. Events: `inquiry_cta_click`, `contact_form_submit`, plus `telephone_click` / `email_click` if such links are added later
 
 ---
 
 ## Changelog
+
+### 2026-08-03 — Professional services site expansion
+
+- Added React Router routes for `/services` and six service pages
+- Build-time prerender (`scripts/prerender.mjs`) writes crawlable HTML per route
+- Shared components: service cards, service hero, breadcrumbs, FAQ, related services, page meta, JSON-LD
+- Header Services dropdown (desktop) + mobile menu; footer Services links
+- Homepage services section links to six pages; Lessons removed from services list (About teaching copy retained)
+- Formspree event types expanded; `source_page` + default event type from service pages
+- Optional GA4 env wiring and conversion events
+- Sitemap updated with all public routes; Vercel rewrites for prerendered paths
+- Sitewide Person + ProfessionalService + WebSite JSON-LD; per-page Service, BreadcrumbList, FAQPage
 
 ### 2026-07-22 — Google Search Console DNS
 

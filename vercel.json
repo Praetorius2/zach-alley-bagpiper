@@ -12,5 +12,14 @@
       "destination": "https://www.zachalleybagpiper.com/:path*",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    { "source": "/funeral-memorial-bagpiper", "destination": "/funeral-memorial-bagpiper/index.html" },
+    { "source": "/wedding-bagpiper", "destination": "/wedding-bagpiper/index.html" },
+    { "source": "/ceremonial-bagpiper", "destination": "/ceremonial-bagpiper/index.html" },
+    { "source": "/private-corporate-events", "destination": "/private-corporate-events/index.html" },
+    { "source": "/scottish-irish-holiday-events", "destination": "/scottish-irish-holiday-events/index.html" },
+    { "source": "/orchestral-concert-recording", "destination": "/orchestral-concert-recording/index.html" },
+    { "source": "/services", "destination": "/services/index.html" }
   ]
 }

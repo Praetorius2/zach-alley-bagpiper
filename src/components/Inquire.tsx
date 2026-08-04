@@ -1,21 +1,69 @@
+import { useMemo, useState, type FormEvent } from 'react'
 import { useForm, ValidationError } from '@formspree/react'
+import { useLocation } from 'react-router-dom'
+import { EVENT_TYPES, type EventType } from '../config/services'
+import { trackContactFormSubmit } from '../lib/analytics'
 
 const FORM_ID = import.meta.env.VITE_FORMSPREE_ID ?? 'xgoglkjo'
-
-const EVENT_TYPES = [
-  'Wedding',
-  'Funeral or memorial',
-  'Special event',
-  'Other',
-] as const
 
 const fieldClass =
   'w-full border-b border-ink/25 bg-transparent py-3 text-ink outline-none transition focus:border-ink'
 
 const labelClass = 'mb-2 block text-xs tracking-[0.16em] text-ink-muted uppercase'
 
-export function Inquire() {
+const EVENT_QUERY_MAP: Record<string, EventType> = {
+  funeral: 'Funeral or memorial',
+  memorial: 'Funeral or memorial',
+  wedding: 'Wedding',
+  ceremonial: 'Ceremonial event',
+  private: 'Private or corporate event',
+  corporate: 'Private or corporate event',
+  cultural: 'Scottish, Irish, or holiday event',
+  scottish: 'Scottish, Irish, or holiday event',
+  irish: 'Scottish, Irish, or holiday event',
+  holiday: 'Scottish, Irish, or holiday event',
+  orchestral: 'Orchestral, concert, or recording',
+  concert: 'Orchestral, concert, or recording',
+  recording: 'Orchestral, concert, or recording',
+}
+
+type InquireProps = {
+  defaultEventType?: EventType
+  heading?: string
+  body?: string
+  sourcePage?: string
+}
+
+function resolveEventType(
+  defaultEventType: EventType | undefined,
+  search: string,
+): EventType | '' {
+  if (defaultEventType) return defaultEventType
+  const params = new URLSearchParams(search)
+  const raw = params.get('event')?.toLowerCase().trim()
+  if (!raw) return ''
+  return EVENT_QUERY_MAP[raw] ?? ''
+}
+
+export function Inquire({
+  defaultEventType,
+  heading = 'Tell me about your event.',
+  body = 'Home base is the Denver–Boulder area. Travel further afield is welcome — rates reflect distance and timing.',
+  sourcePage,
+}: InquireProps) {
+  const location = useLocation()
   const [state, handleSubmit] = useForm(FORM_ID)
+  const resolvedSource = sourcePage ?? location.pathname
+  const initialEventType = useMemo(
+    () => resolveEventType(defaultEventType, location.search),
+    [defaultEventType, location.search],
+  )
+  const [eventType, setEventType] = useState<EventType | ''>(initialEventType)
+
+  function onSubmit(event: FormEvent<HTMLFormElement>) {
+    trackContactFormSubmit(eventType || 'unknown', resolvedSource)
+    void handleSubmit(event)
+  }
 
   return (
     <section
@@ -31,11 +79,10 @@ export function Inquire() {
           id="inquire-heading"
           className="mt-6 font-display text-4xl text-ink md:text-5xl"
         >
-          Tell me about your event.
+          {heading}
         </h2>
         <p className="mx-auto mt-6 max-w-lg text-base leading-relaxed font-light text-ink-muted">
-          Home base is the Denver–Boulder area. Travel further afield is welcome — rates reflect
-          distance and timing.
+          {body}
         </p>
 
         {state.succeeded ? (
@@ -43,7 +90,7 @@ export function Inquire() {
             Thank you — your inquiry was sent. I will be in touch soon.
           </p>
         ) : (
-          <form onSubmit={handleSubmit} className="mt-14 space-y-6 text-left">
+          <form onSubmit={onSubmit} className="mt-14 space-y-6 text-left">
             <div className="grid gap-6 md:grid-cols-2">
               <div>
                 <label htmlFor="name" className={labelClass}>
@@ -114,7 +161,8 @@ export function Inquire() {
                 id="event_type"
                 name="event_type"
                 className={fieldClass}
-                defaultValue=""
+                value={eventType}
+                onChange={(event) => setEventType(event.target.value as EventType | '')}
                 required
               >
                 <option value="" disabled className="bg-night-deep text-ink">
@@ -142,6 +190,7 @@ export function Inquire() {
             </div>
 
             <input type="hidden" name="_subject" value="Bagpipe inquiry" />
+            <input type="hidden" name="source_page" value={resolvedSource} />
 
             <ValidationError errors={state.errors} className="block text-center text-sm text-ink-muted" />
 
